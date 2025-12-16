@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Traffic Control Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        /* full CSS as provided */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .status-bar {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .status-card {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .status-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .status-card h3 {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .status-card .value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .status-card .label {
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+
+        .signal-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .signal-item {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #fff;
+            transition: all 0.3s;
+        }
+
+        .signal-item.active {
+            border-left-color: #00ff88;
+            background: rgba(0,255,136,0.2);
+            box-shadow: 0 0 20px rgba(0,255,136,0.3);
+        }
+
+        .signal-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .signal-timer {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .signal-state {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .state-red {
+            background: #ff4757;
+        }
+
+        .state-yellow {
+            background: #ffa502;
+        }
+
+        .state-green {
+            background: #2ed573;
+        }
+
+        .lane-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .lane-item {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lane-info {
+            flex: 1;
+        }
+
+        .lane-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .lane-stats {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        .congestion-badge {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .congestion-high {
+            background: #ff4757;
+        }
+
+        .congestion-medium {
+            background: #ffa502;
+        }
+
+        .congestion-low {
+            background: #2ed573;
+        }
+
+        .priority-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .priority-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff88, #00d9ff);
+            transition: width 0.5s ease;
+            border-radius: 10px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .emergency-alert {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #ff4757;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(255, 71, 87, 0.5);
+            animation: pulse 1.5s infinite;
+            z-index: 1000;
+            display: none;
+        }
+
+        .emergency-alert.active {
+            display: block;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 10px 30px rgba(255, 71, 87, 0.5);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 15px 40px rgba(255, 71, 87, 0.7);
+            }
+        }
+
+        .events-log {
+            max-height: 300px;
+            overflow-y: auto;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .event-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+            border-left: 3px solid #00ff88;
+            font-size: 0.9rem;
+        }
+
+        .event-time {
+            opacity: 0.6;
+            font-size: 0.8rem;
+        }
+
+        .event-emergency {
+            border-left-color: #ff4757;
+        }
+
+        .event-warning {
+            border-left-color: #ffa502;
+        }
+
+        .ml-status {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,255,136,0.2);
+            border-radius: 10px;
+            border: 2px solid #00ff88;
+            margin-bottom: 20px;
+        }
+
+        .ml-status.inactive {
+            background: rgba(255,69,87,0.2);
+            border-color: #ff4757;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.3);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.5);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2rem;
+        }
+
+        .metric-trend {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .trend-up {
+            color: #2ed573;
+        }
+
+        .trend-down {
+            color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <!-- Full HTML body content from user pasted here -->
+    <div class="emergency-alert" id="emergencyAlert">
+        <h2>🚨 EMERGENCY MODE ACTIVE</h2>
+        <p id="emergencyLane">Clearing lane...</p>
+    </div>
+    <div class="container">
+        <header>
+            <h1>🚦 ML Traffic Control Dashboard</h1>
+            <p class="subtitle">Real-Time Intelligent Traffic Management System</p>
+        </header>
+
+        <div class="ml-status" id="mlStatus">
+            <h3>🧠 ML Model Status: <span id="mlStatusText">Loading...</span></h3>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-card">
+                <h3>Total Vehicles</h3>
+                <div class="value" id="totalVehicles">0</div>
+                <div class="label">Passed Through</div>
+            </div>
+            <div class="status-card">
+                <h3>Throughput</h3>
+                <div class="value" id="throughput">0.00</div>
+                <div class="label">Vehicles/Second</div>
+            </div>
+            <div class="status-card">
+                <h3>Simulation Time</h3>
+                <div class="value" id="simTime">0</div>
+                <div class="label">Seconds Elapsed</div>
+            </div>
+            <div class="status-card">
+                <h3>Active Lanes</h3>
+                <div class="value" id="activeLanes">0</div>
+                <div class="label">With Traffic</div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>🚦 Signal Status</h2>
+                <div class="signal-grid" id="signalGrid">
+                    <div class="loading">Loading signals...</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🛣️ Lane Congestion</h2>
+                <div class="lane-list" id="laneList">
+                    <div class="loading">Loading lane data...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>📊 Throughput Over Time</h2>
+                <div class="chart-container">
+                    <canvas id="throughputChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🎯 Efficiency Metrics</h2>
+                <div class="chart-container">
+                    <canvas id="efficiencyChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>⏱️ Average Wait Times</h2>
+                <div class="chart-container">
+                    <canvas id="waitTimeChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🚗 Clearance Rates</h2>
+                <div class="chart-container">
+                    <canvas id="clearanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📝 Event Log</h2>
+            <div class="events-log" id="eventsLog">
+                <div class="loading">Loading events...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let throughputChart, waitTimeChart, efficiencyChart, clearanceChart;
+        let throughputData = [];
+        let waitTimeData = { right: [], down: [], left: [], up: [] };
+        const maxDataPoints = 30;
+
+        // Initialize charts
+        function initCharts() {
+            // Throughput chart
+            const throughputCtx = document.getElementById('throughputChart').getContext('2d');
+            throughputChart = new Chart(throughputCtx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Vehicles/Second',
+                        data: [],
+                        borderColor: '#00ff88',
+                        backgroundColor: 'rgba(0, 255, 136, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#fff' }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: '#fff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        },
+                        x: {
+                            ticks: { color: '#fff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        }
+                    }
+                }
+            });
+
+            // Efficiency chart
+            const efficiencyCtx = document.getElementById('efficiencyChart').getContext('2d');
+            efficiencyChart = new Chart(efficiencyCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['East', 'South', 'West', 'North'],
+                    datasets: [{
+                        label: 'Efficiency Score',
+                        data: [1, 1, 1, 1],
+                        backgroundColor: 'rgba(0, 255, 136, 0.2)',
+                        borderColor: '#00ff88',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#00ff88',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#00ff88'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#fff' }
+                        }
+                    },
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 2,
+                            ticks: { 
+                                color: '#fff',
+                                backdropColor: 'rgba(0,0,0,0.5)'
+                            },
+                            grid: { color: 'rgba(255,255,255,0.2)' },
+                            pointLabels: { color: '#fff', font: { size: 14 } }
+                        }
+                    }
+                }
+            });
+
+            // Wait time chart
+            const waitTimeCtx = document.getElementById('waitTimeChart').getContext('2d');
+            waitTimeChart = new Chart(waitTimeCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['East', 'South', 'West', 'North'],
+                    datasets: [{
+                        label: 'Wait Time (seconds)',
+                        data: [0, 0, 0, 0],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(255, 206, 86, 0.7)',
+                            'rgba(75, 192, 192, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#fff' }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { color: '#fff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        },
+                        x: {
+                            ticks: { color: '#fff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        }
+                    }
+                }
+            });
+
+            // Clearance rate chart
+            const clearanceCtx = document.getElementById('clearanceChart').getContext('2d');
+            clearanceChart = new Chart(clearanceCtx, {
+                type: 'line',
+                data: {
+                    labels: ['East', 'South', 'West', 'North'],
+                    datasets: [{
+                        label: 'Clearance Rate (v/s)',
+                        yAxisID: 'y',
+                        data: [0, 0, 0, 0],
+                        borderColor: '#00d9ff',
+                        backgroundColor: 'rgba(0, 217, 255, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        borderWidth: 3
+                    }, {
+                        label: 'Predicted Clear Time (s)',
+                        yAxisID: 'y1',
+                        data: [0, 0, 0, 0],
+                        borderColor: '#ffa502',
+                        backgroundColor: 'rgba(255, 165, 2, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        borderWidth: 2,
+                        borderDash: [5, 5]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#fff' }
+                        }
+                    },
+                    scales: {
+                        y: {                         // left axis for clearance rate
+                            beginAtZero: true,
+                            position: 'left',
+                            ticks: { color: '#00d9ff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        },
+                        y1: {                        // right axis for predicted clear time
+                            beginAtZero: true,
+                            position: 'right',
+                            ticks: { color: '#ffa502' },
+                            grid: { drawOnChartArea: false }
+                        },
+                        x: {                         // keep existing X axis
+                            ticks: { color: '#fff' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Update dashboard with metrics
+        function updateDashboard(metrics) {
+            // Update status cards
+            document.getElementById('totalVehicles').textContent = metrics.vehicles_passed || 0;
+            document.getElementById('throughput').textContent = (metrics.throughput || 0).toFixed(2);
+            document.getElementById('simTime').textContent = metrics.simulation_time || 0;
+            
+            const activeLanes = Object.values(metrics.lanes || {}).filter(lane => lane.waiting > 0).length;
+            document.getElementById('activeLanes').textContent = activeLanes;
+
+            // Update ML status
+            const mlStatus = document.getElementById('mlStatus');
+            const mlStatusText = document.getElementById('mlStatusText');
+            if (metrics.ml_active) {
+                mlStatus.classList.remove('inactive');
+                mlStatusText.textContent = 'ACTIVE';
+            } else {
+                mlStatus.classList.add('inactive');
+                mlStatusText.textContent = 'INACTIVE (Fallback Mode)';
+            }
+
+            // Update emergency alert
+            const emergencyAlert = document.getElementById('emergencyAlert');
+            const emergencyLane = document.getElementById('emergencyLane');
+            if (metrics.emergency_active && metrics.emergency_lane) {
+                emergencyAlert.classList.add('active');
+                emergencyLane.textContent = `Clearing: ${metrics.emergency_lane.toUpperCase()} lane`;
+            } else {
+                emergencyAlert.classList.remove('active');
+            }
+
+            // Update signals
+            updateSignals(metrics.signals || []);
+
+            // Update lanes
+            updateLanes(metrics.lanes || {}, metrics.priority_queue || {});
+
+            // Update charts
+            updateCharts(metrics);
+
+            // Update events
+            updateEvents(metrics.events || []);
+        }
+
+        function updateSignals(signals) {
+            const signalGrid = document.getElementById('signalGrid');
+            const directions = ['East (Right)', 'South (Down)', 'West (Left)', 'North (Up)'];
+            
+            let html = '';
+            signals.forEach((signal, index) => {
+                const isActive = signal.state === 'green' || signal.state === 'yellow';
+                const stateClass = `state-${signal.state}`;
+                
+                html += `
+                    <div class="signal-item ${isActive ? 'active' : ''}">
+                        <h3>${directions[index]}</h3>
+                        <div class="signal-state ${stateClass}">${signal.state.toUpperCase()}</div>
+                        <div class="signal-timer">${signal.timer}s</div>
+                        <div class="lane-stats">Total Green: ${signal.total_green_time || 0}s</div>
+                    </div>
+                `;
+            });
+            signalGrid.innerHTML = html;
+        }
+
+        function updateLanes(lanes, priorityQueue) {
+            const laneList = document.getElementById('laneList');
+            const directionMap = { right: 'East', down: 'South', left: 'West', up: 'North' };
+            
+            let html = '';
+            for (const [direction, data] of Object.entries(lanes)) {
+                const pq = priorityQueue[direction] || {};
+                const congestionClass = `congestion-${(data.congestion || 'low').toLowerCase()}`;
+                const priorityPercent = Math.min(100, (pq.priority_score || 0) / 10);
+                
+                // Dynamic indicators
+                const clearanceRate = pq.clearance_rate || 0;
+                const efficiency = pq.efficiency || 1.0;
+                const predictedTime = pq.predicted_clear_time || 0;
+                
+                // Color coding for efficiency
+                let efficiencyColor = '#2ed573';
+                if (efficiency < 0.7) efficiencyColor = '#ff4757';
+                else if (efficiency < 1.0) efficiencyColor = '#ffa502';
+                
+                html += `
+                    <div class="lane-item">
+                        <div class="lane-info">
+                            <div class="lane-name">${directionMap[direction]}</div>
+                            <div class="lane-stats">
+                                Waiting: ${data.waiting} | Total: ${data.total} | Crossed: ${data.crossed}
+                            </div>
+                            <div class="lane-stats">
+                                Wait: ${pq.wait_time || 0}s | Priority: ${pq.priority_score || 0}
+                            </div>
+                            <div class="lane-stats" style="color: ${efficiencyColor}">
+                                ⚡ Efficiency: ${efficiency.toFixed(2)} | Clear Rate: ${clearanceRate.toFixed(2)}v/s | ETA: ${predictedTime.toFixed(0)}s
+                            </div>
+                            <div class="priority-bar">
+                                <div class="priority-fill" style="width: ${priorityPercent}%"></div>
+                            </div>
+                        </div>
+                        <div class="congestion-badge ${congestionClass}">
+                            ${data.congestion || 'Low'}
+                        </div>
+                    </div>
+                `;
+            }
+            laneList.innerHTML = html || '<div class="loading">No lane data</div>';
+        }
+
+        function updateCharts(metrics) {
+            // Update throughput chart
+            const time = metrics.simulation_time || 0;
+            const throughput = metrics.throughput || 0;
+            
+            throughputData.push({ time, value: throughput });
+            if (throughputData.length > maxDataPoints) {
+                throughputData.shift();
+            }
+            
+            throughputChart.data.labels = throughputData.map(d => d.time + 's');
+            throughputChart.data.datasets[0].data = throughputData.map(d => d.value);
+            throughputChart.update('none');
+
+            // Update wait time chart
+            const directionMap = { right: 0, down: 1, left: 2, up: 3 };
+            const pq = metrics.priority_queue || {};
+            
+            for (const [direction, index] of Object.entries(directionMap)) {
+                const waitTime = pq[direction]?.wait_time || 0;
+                waitTimeChart.data.datasets[0].data[index] = waitTime;
+            }
+            waitTimeChart.update('none');
+
+            // Update efficiency chart
+            // --- Update efficiency radar chart dynamically ---
+            if (metrics.priority_queue) {
+                const dirs = ['right', 'down', 'left', 'up'];
+                const efficiencyValues = dirs.map(d => {
+                    const pq = metrics.priority_queue[d] || {};
+                    return pq.efficiency || 1;
+                });
+
+                efficiencyChart.data.datasets[0].data = efficiencyValues;
+                efficiencyChart.update();
+            }
+
+            // Update clearance rate chart
+            for (const [direction, index] of Object.entries(directionMap)) {
+                const clearanceRate = pq[direction]?.clearance_rate || 0;
+                const predictedTime = pq[direction]?.predicted_clear_time || 0;
+                clearanceChart.data.datasets[0].data[index] = clearanceRate;
+                clearanceChart.data.datasets[1].data[index] = predictedTime;
+            }
+            clearanceChart.update('none');
+        }
+
+        function updateEvents(events) {
+            const eventsLog = document.getElementById('eventsLog');
+            
+            if (events.length === 0) {
+                eventsLog.innerHTML = '<div class="loading">No events yet</div>';
+                return;
+            }
+            
+            let html = '';
+            // Show most recent events first
+            const recentEvents = events.slice().reverse().slice(0, 20);
+            
+            recentEvents.forEach(event => {
+                const eventClass = event.type === 'emergency' ? 'event-emergency' : 
+                                 event.type === 'warning' ? 'event-warning' : '';
+                
+                html += `
+                    <div class="event-item ${eventClass}">
+                        <div class="event-time">${event.time}s</div>
+                        <div>${event.message}</div>
+                    </div>
+                `;
+            });
+            
+            eventsLog.innerHTML = html;
+        }
+
+        // Fetch metrics from file
+        async function fetchMetrics() {
+            try {
+                const response = await fetch('metrics.json?t=' + Date.now());
+                if (response.ok) {
+                    const metrics = await response.json();
+                    updateDashboard(metrics);
+                }
+            } catch (error) {
+                console.error('Error fetching metrics:', error);
+            }
+        }
+
+        // Initialize
+        initCharts();
+        
+        // Update every second
+        setInterval(fetchMetrics, 1000);
+        
+        // Initial fetch
+        fetchMetrics();
+    </script>
+</body>
+</html>

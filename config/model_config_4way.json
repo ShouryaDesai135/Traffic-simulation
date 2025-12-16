@@ -1,0 +1,58 @@
+{
+  "feature_columns": [
+    "vehicle_count",
+    "avg_speed",
+    "emergency_count",
+    "time_of_day",
+    "is_rush_hour",
+    "lane_id",
+    "left_turn_queue",
+    "straight_queue",
+    "right_turn_queue",
+    "total_turn_queue",
+    "traffic_density",
+    "speed_congestion_ratio",
+    "turn_complexity",
+    "left_turn_ratio",
+    "origin_encoded",
+    "destination_encoded",
+    "turn_encoded"
+  ],
+  "label_mapping": {
+    "High": 0,
+    "Low": 1,
+    "Medium": 2
+  },
+  "classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 150,
+  "accuracy": 0.9998092649548196,
+  "train_samples": 838860,
+  "test_samples": 209715,
+  "turn_complexity_map": {
+    "Left": 3.0,
+    "Straight": 1.0,
+    "Right": 0.5
+  },
+  "origin_classes": [
+    "East",
+    "North",
+    "South",
+    "West"
+  ],
+  "destination_classes": [
+    "East",
+    "North",
+    "South",
+    "West"
+  ],
+  "turn_classes": [
+    "Left",
+    "Right",
+    "Straight"
+  ]
+}

@@ -1,0 +1,3850 @@
+[
+  {
+    "timestamp": "2024-01-15 00:00:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 5,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 14.07,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 4,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 3,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:01:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 2,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 2,
+          "Straight": 29
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2327,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 13.93,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 7,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 5,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:02:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 14.49,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 332,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 28,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:03:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 13.07,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 7,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 3,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2322,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 4,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 2,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:04:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 3,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2322,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 6,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:05:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 6,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 6,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 15.95,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 1,
+          "Right": 6,
+          "Straight": 24
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 2,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:06:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2027,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 13.84,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 3,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2027,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 7,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 322,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:07:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 14.29,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 3,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 2,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 330,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 1,
+          "Right": 4,
+          "Straight": 22
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 327,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 4,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:08:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 2,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2028,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 14.19,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 4,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 30,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 5,
+          "Straight": 12
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 4028,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:09:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 2,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 4,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 425,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 12.91,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 4,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2324,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:10:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 3,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 4,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 15.48,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:11:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 2,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 7,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 15.68,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2028,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 13.8,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 5,
+          "Straight": 24
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2327,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:12:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 1,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 6,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 28,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 5,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:13:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 5,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 431,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 15.55,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 8,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 31,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 11,
+          "Right": 3,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 428,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:14:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 6,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 428,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2028,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:15:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 327,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 1,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 2,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2027,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 5,
+          "Straight": 12
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:16:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 7,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 1,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 5,
+          "Straight": 23
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2030,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2028,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:17:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 2,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2322,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 3,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:18:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 3,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 3,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 1,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2030,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 11
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2325,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:19:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 1,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 3,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 2,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 2,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:20:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 3,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 16.69,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 1,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 3,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2321,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 5,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 328,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:21:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 15.4,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 2,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 4024,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 7,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 424,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:22:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 4,
+          "Straight": 12
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 14.71,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 5,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:23:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 1,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 33,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 16.38,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 13.89,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 6,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:24:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 4,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 6,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 421,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 7,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 3,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 338,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:25:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 3,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 3,
+          "Straight": 23
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2033,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 4,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2041,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:26:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 1,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 3,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 15.19,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 7,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 1,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:27:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 14.42,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 23
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2027,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 5,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 14.14,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 7,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 14.08,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 3,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:28:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 4,
+          "Straight": 24
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 1,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 3,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 15.42,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 12,
+          "Right": 7,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:29:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 10,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 330,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 3,
+          "Straight": 23
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2321,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:30:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 8,
+          "Straight": 12
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 431,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 14.38,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 3,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2324,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 14.98,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 2,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:31:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 13.38,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 4,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 6,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 6029,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 3,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:32:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 3,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 1,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 321,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 14.57,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 2,
+          "Straight": 23
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2034,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:33:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 2,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 14.08,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 4,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 3,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 14.56,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 3,
+          "Straight": 23
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:34:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 15.31,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 3,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 2,
+          "Straight": 24
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2031,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 4,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 322,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 4,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:35:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 22
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 5,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 425,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:36:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 3,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2028,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 5,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2422,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:37:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 15.45,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 3,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 16.07,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 3,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 4,
+          "Straight": 27
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 425,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:38:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 14.06,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 5,
+          "Straight": 22
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 325,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 3,
+          "Straight": 22
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 432,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 11,
+          "Right": 3,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:39:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 4,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 4,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 4,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 322,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:40:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 2,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 4,
+          "Straight": 25
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 328,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 2,
+          "Straight": 27
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 5,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:41:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 2,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 1,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 13.84,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2028,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 15.5,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 5,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:42:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 6,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2322,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 3,
+          "Straight": 22
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 2,
+          "Straight": 23
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 333,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:43:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 13.58,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 3,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 14.32,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 3,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 3,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 6,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:44:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 7,
+          "Straight": 14
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 25,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 14.45,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 4,
+          "Straight": 22
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 327,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 1.5,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 7,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2030,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 1,
+        "avg_speed": 14.21,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 3,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:45:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 5,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2024,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 1,
+        "avg_speed": 13.6,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 9,
+          "Right": 3,
+          "Straight": 13
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 2,
+          "Straight": 27
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2031,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 1,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 10,
+          "Right": 5,
+          "Straight": 24
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:46:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 13.87,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 5,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 8,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 1,
+        "avg_speed": 16.36,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 7,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2021,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 1,
+          "Straight": 26
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2029,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:47:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 6,
+          "Right": 5,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 4,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 1,
+        "straight_queue": 0,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 7,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 25,
+        "has_anomaly": false
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 2,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 25,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:48:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 14.36,
+        "emergency_count": 1,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 10,
+          "Right": 5,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 11,
+          "Right": 2,
+          "Straight": 16
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 330,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 8,
+          "Right": 2,
+          "Straight": 19
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 4,
+          "Right": 3,
+          "Straight": 20
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-01-15 00:49:00",
+    "lanes": [
+      {
+        "lane_id": 1,
+        "origin": "North",
+        "vehicle_count": 1,
+        "avg_speed": 13.91,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 0,
+        "right_turn_queue": 1,
+        "turn_distribution": {
+          "Left": 5,
+          "Right": 5,
+          "Straight": 18
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 430,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 2,
+        "origin": "East",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 2,
+          "Right": 7,
+          "Straight": 21
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2025,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 3,
+        "origin": "South",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 7,
+          "Right": 2,
+          "Straight": 17
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 422,
+        "has_anomaly": true
+      },
+      {
+        "lane_id": 4,
+        "origin": "West",
+        "vehicle_count": 0,
+        "avg_speed": 15.0,
+        "emergency_count": 0,
+        "left_turn_queue": 0,
+        "straight_queue": 1,
+        "right_turn_queue": 0,
+        "turn_distribution": {
+          "Left": 3,
+          "Right": 7,
+          "Straight": 15
+        },
+        "predicted_congestion": "Low",
+        "priority_score": 2022,
+        "has_anomaly": true
+      }
+    ]
+  }
+]
